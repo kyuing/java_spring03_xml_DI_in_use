@@ -29,7 +29,7 @@
 	<!-- here, id means an instance of the object type StudentInfo -->
 	<bean id="studentInfo" class="com.javalec.studentEx.StudentInfo">
 		<constructor-arg>
-			<ref bean="student1"/>
+			<ref bean="student1"/>	<!-- reference student 1 only -->
 		</constructor-arg>
 	</bean>
 </beans>

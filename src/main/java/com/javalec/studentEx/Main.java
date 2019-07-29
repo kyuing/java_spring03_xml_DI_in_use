@@ -20,7 +20,7 @@ public class Main {
 
 		//way 2: xml + java DI (with no annotation)
 		Student student2 = ctx.getBean("student2", Student.class);
-		studentInfo.setStudent(student2);
+		studentInfo.setStudent(student2);	//set student2 and it changes the id student 1 into student2 in the xml file
 		studentInfo.getStudentInfo();
 		
 		ctx.close();	//close ctx
