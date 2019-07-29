@@ -23,7 +23,7 @@ public class Main {
 		studentInfo.setStudent(student2);
 		studentInfo.getStudentInfo();
 		
-		ctx.close();
+		ctx.close();	//close ctx
 	}
 
 }
