@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student1" class="com.javalec.studentEx.Student">
+	
+		<!-- 
+		using setter
+		<property name="nameGoesHere" value="valueGoesHere"/> -->
+		
+		<!-- using constructor -->	
+		<constructor-arg value="KyuTae"/>
+		<constructor-arg value="20 years old"/>
+		<constructor-arg value="2nd year"/>
+		<constructor-arg value="IT"/>
+		
+	</bean>
+	
+	<bean id="student2" class="com.javalec.studentEx.Student">
+		
+		<constructor-arg value="Reynolds Garcia"/>
+		<constructor-arg value="24 years old"/>
+		<constructor-arg value="3nd year"/>
+		<constructor-arg value="Business"/>
+		
+	</bean>
+
+	<!-- here, id means an instance of the object type StudentInfo -->
+	<bean id="studentInfo" class="com.javalec.studentEx.StudentInfo">
+		<constructor-arg>
+			<ref bean="student1"/>
+		</constructor-arg>
+	</bean>
+</beans>
