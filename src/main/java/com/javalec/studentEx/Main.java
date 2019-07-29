@@ -14,7 +14,7 @@ public class Main {
 		
 		
 		//way 1: xml DI 
-											  /*id (instance), parent class*/
+                                                      /*id (instance), parent class*/
 		StudentInfo studentInfo = ctx.getBean("studentInfo", StudentInfo.class);
 		studentInfo.getStudentInfo();
 
